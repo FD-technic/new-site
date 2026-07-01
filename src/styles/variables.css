@@ -1,24 +1,40 @@
 :root {
-  --background: #3d6289;
+  --background: #FFF8EC; /* stránka */
+  --surface: #FFFFFF; /* karta, modal */
+  --card: #F6F1E3; /* karta, modal */
+  --background: #F6F1E3;
 
-  --card: #bcc9dd;
+  --border: #E3DEC9;
 
-  --primary: #4f79a8;
-  --primary-hover: #628dbc;
+  /* Primary */
 
-  --secondary: #2f4254;
-  --accent: #d8a441;
-  --accent-hover: #b6914e;
-    --success: #0ecd4b;
-  --border: #95a8bc;
+  --primary: #DDBF4A; /* hlavní akce (oranžová) */
+  --primary-hover: #D4B135;
 
-  --surface: #8098b3;
-  --surface-alt: #e8edf3;
 
-  --text-dark: #24303c;
-  --text-light: #f5f8fa;
+  --secondary: #495057;
+  --secondary-hover: #343A40;
 
-  --modal-blur: rgba(0, 0, 0, 0.5);
+  --neutral: #4A4A4A;
+
+  /* Accent */
+  --accent: #4879a7; /* modrá pro odkazy */
+  --accent-hover: #35638E;
+
+  /* Text */
+  --text: #2D2D2D;
+  --text-light: #FFFFFF;
+/* Status */
+  --success: #4CAF50;
+  --success-hover: #419A45;
+
+  --warning: #D97706;
+  --warning-hover: #B45F05;
+
+  --danger: #C0392B;
+  --danger-hover: #A93226;
+  
+  --modal-blur: rgba(0, 0, 0, 0.65);
 
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;

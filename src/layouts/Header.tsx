@@ -15,7 +15,7 @@ const Header = () => {
         <div className="brand">
           <img src={logo} height={50} alt="Ferdo UI logo" />
           <h1>
-            Ferdo<span> UI - template</span>
+            Moving
           </h1>
         </div>
         <nav className="nav">

@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <>
       <div className="container">
-        <h2>Homepage</h2>
+        <h2>NEW - Homepage</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
           cupiditate nulla excepturi deleniti tempore libero, maxime corporis
