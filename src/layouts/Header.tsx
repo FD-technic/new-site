@@ -1,12 +1,22 @@
 import logo from "../assets/UIlogo.png";
 import "./layout.css";
-import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import React, { useState } from "react";
 import BaseModal from "../components/modal/BaseModal";
 import ContactContent from "../components/modal/ContactContent";
-import Button from "../components/Button";
+import type { Theme, ThemeKey } from "../types/Theme";
+import type { MenuItem } from "../types/Menu";
+import NavMenu from "./NavMenu";
+import ThemeSelect from "../components/select/ThemeSelect";
+import { NavLink } from "react-router-dom";
 
-const Header = () => {
+type HeaderProps = {
+  menu: MenuItem[];
+  themes: Theme[];
+  selectedTheme: ThemeKey;
+  onThemeChange: (theme: ThemeKey) => void;
+}
+
+const Header = ({ menu, themes, selectedTheme, onThemeChange }: HeaderProps) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
@@ -14,43 +24,31 @@ const Header = () => {
       <header className="header">
         <div className="brand">
           <img src={logo} height={50} alt="Ferdo UI logo" />
-          <h1>
-            Moving
-          </h1>
+          <div className="col span center">
+
+          <span>Moving</span>
+          <span>with Care</span>
+          </div>
         </div>
-        <nav className="nav">
-          <ul>
-            <li>
-              <NavLink
-                to="/"
-                className={({ isActive }) => (isActive ? "btn btn-accent btn-line active" : "btn btn-accent btn-line")}
-              >
-                Home
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/about"
-                className={({ isActive }) => (isActive ? "btn btn-accent btn-line active" : "btn btn-accent btn-line")}
-              >
-                About me
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/service"
-                className={({ isActive }) => (isActive ? "btn btn-accent btn-line active" : "btn btn-accent btn-line")}
-              >
-                Service
-              </NavLink>
-            </li>
-            <li>
-              <Button onClick={() => setIsModalOpen(true)} className="btn-accent btn-md">
-                Contact
-              </Button>
-            </li>
-          </ul>
-        </nav>
+        <div className="header-actions">
+          
+          <div className="group-menu">
+            <NavMenu items={menu} className="nav" />
+
+          <NavLink
+            to="/reservation"
+            className="btn btn-accent btn-sm"
+          >
+            Reservations
+          </NavLink>
+            </div>
+
+          <ThemeSelect 
+            items={themes}
+            value={selectedTheme}
+            onChange={onThemeChange}
+            />
+        </div>
       </header>
 
       <BaseModal

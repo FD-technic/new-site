@@ -86,20 +86,23 @@
    =================== */
 
 .btn-line {
+    z-index: 1;
     position: relative;
     display: inline-block;
-    
+    font-weight: 500;
+        
     background: transparent;
     border: none;
 }
 
 .btn-line::before,
 .btn-line::after {
+    z-index: 2;
     content: "";
     position: absolute;
     
     width: 50%;
-    height: 3px;
+    height: 4px;
     
     transform: scaleX(0);
 
@@ -128,6 +131,5 @@
 
 .btn-line:hover,
 .btn-line.active {
-    color: var(--btn-hover);
     background-color: transparent;
 }

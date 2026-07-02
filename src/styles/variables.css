@@ -17,6 +17,7 @@
 
   --neutral: #4A4A4A;
 
+  --bg-gradient: linear-gradient(to bottom, #e7cc54 0%, #d9c06b 30%, #f6f1e3 100%);
   /* Accent */
   --accent: #4879a7; /* modrá pro odkazy */
   --accent-hover: #35638E;
@@ -56,4 +57,55 @@
   @media (max-width: 1024px) {
     font-size: 16px;
   }
+}
+
+
+  [data-theme="ocean"] {
+
+  /* Background */
+  --background: #F2F7FB;
+  --surface: #FFFFFF;
+  --card: #EAF2F8;
+
+  --border: #D2DFEA;
+
+  /* Primary */
+  --primary: #4879A7;
+  --primary-hover: #35638E;
+
+  /* Secondary */
+  --secondary: #2F4858;
+  --secondary-hover: #233743;
+
+  --neutral: #4B5C69;
+
+  --bg-gradient: linear-gradient(
+    to bottom,
+    #4879A7 0%,
+    #7FAED6 30%,
+    #F2F7FB 100%
+);
+  /* Accent */
+  --accent: #F4B400;
+--accent-hover: #DB9800;
+
+  /* Text */
+  --text: #263238;
+  --text-light: #FFFFFF;
+
+  /* Status */
+  --success: #43A047;
+  --success-hover: #388E3C;
+
+  --warning: #F9A825;
+  --warning-hover: #F57F17;
+
+  --danger: #D32F2F;
+  --danger-hover: #B71C1C;
+
+  --modal-blur: rgba(0,0,0,.65);
+
+  --shadow:
+    rgba(0,0,0,.10) 0 10px 15px -3px,
+    rgba(0,0,0,.05) 0 4px 6px -2px;
 }

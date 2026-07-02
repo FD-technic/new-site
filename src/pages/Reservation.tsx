@@ -1,10 +1,14 @@
 import Button from "../components/button/Button";
 
-const Home = () => {
+const Reservation = () => {
   return (
     <>
       <div className="container">
-        <h2>Homepage</h2>
+        <h2>Reservation</h2>
+        <p>termin:</p>
+        <p>from:</p>
+        <p>to:</p>
+        <hr/>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
           cupiditate nulla excepturi deleniti tempore libero, maxime corporis
@@ -22,4 +26,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Reservation;

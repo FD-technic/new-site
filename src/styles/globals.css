@@ -13,7 +13,7 @@ body {
   min-height: 100vh;
   font-family: var(--sans);
   color: var(--text);
-  background: linear-gradient(to bottom, #e7cc54 0%, #d9c06b 30%, #f6f1e3 100%);
+  background: var(--bg-gradient);
 }
 
 .page {
@@ -55,4 +55,20 @@ input,
 textarea,
 select {
   font: inherit;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.center {
+  text-align: center;
+}
+.span {
+  font-weight: 700;
 }
