@@ -17,6 +17,7 @@
 
   --neutral: #4A4A4A;
 
+  --bg-form: #e9e2c1;
   --bg-gradient: linear-gradient(to bottom, #e7cc54 0%, #d9c06b 30%, #f6f1e3 100%);
   /* Accent */
   --accent: #4879a7; /* modrá pro odkazy */
@@ -59,6 +60,69 @@
   }
 }
 
+[data-theme="dark-sand"] {
+  /* Surface */
+
+  --background: #1F1C18;          /* stránka */
+  --surface: #2A2621;             /* panely */
+  --card: #332E28;                /* karty */
+
+  --border: #4A433A;
+
+  /* Primary */
+
+  --primary: #DDBF4A;
+  --primary-hover: #E7C95A;
+
+  /* Secondary */
+
+  --secondary: #8A908F;
+  --secondary-hover: #A3A9A8;
+
+  /* Neutral */
+
+  --neutral: #C7C2BA;
+
+  /* Background gradient */
+
+  --bg-form: #7e7445;
+  --bg-gradient: linear-gradient(
+    to bottom,
+    #7B6620 0%,
+    #4E4323 35%,
+    #1F1C18 100%
+  );
+
+  /* Accent */
+
+  --accent: #6FA7D8;
+  --accent-hover: #8BBCE6;
+
+  /* Text */
+
+  --text: #F3EFE7;
+  --text-light: #FFFFFF;
+
+  /* Status */
+
+  --success: #66BB6A;
+  --success-hover: #7AC97E;
+
+  --warning: #E6A23C;
+  --warning-hover: #F0B34D;
+
+  --danger: #E57373;
+  --danger-hover: #EF8B8B;
+
+  /* Effects */
+
+  --modal-blur: rgba(0, 0, 0, 0.8);
+
+  --shadow:
+    rgba(0, 0, 0, 0.45) 0 10px 20px,
+    rgba(0, 0, 0, 0.25) 0 4px 8px;
+}
+
 
   [data-theme="ocean"] {
 
@@ -79,6 +143,7 @@
 
   --neutral: #4B5C69;
 
+  --bg-form: #bdd4e9;
   --bg-gradient: linear-gradient(
     to bottom,
     #4879A7 0%,
@@ -108,4 +173,67 @@
   --shadow:
     rgba(0,0,0,.10) 0 10px 15px -3px,
     rgba(0,0,0,.05) 0 4px 6px -2px;
+}
+
+[data-theme="dark-ocean"] {
+  /* Surface */
+
+  --background: #0F1720;      /* stránka */
+  --surface: #18232E;         /* panely */
+  --card: #22313D;            /* karty */
+
+  --border: #324554;
+
+  /* Primary */
+
+  --primary: #3A8DDE;
+  --primary-hover: #3d7db9;
+
+  /* Secondary */
+
+  --secondary: #90A4AE;
+  --secondary-hover: #B0BEC5;
+
+  /* Neutral */
+
+  --neutral: #C6D2DA;
+
+  /* Background gradient */
+
+  --bg-form: #7196b9;
+  --bg-gradient: linear-gradient(
+    to bottom,
+    #2B6FA3 0%,
+    #1C425F 35%,
+    #0F1720 100%
+  );
+
+  /* Accent */
+
+  --accent: #084f58;
+  --accent-hover: #115c64;
+
+  /* Text */
+
+  --text: #EDF5FA;
+  --text-light: #FFFFFF;
+
+  /* Status */
+
+  --success: #4CAF50;
+  --success-hover: #66BB6A;
+
+  --warning: #F0A500;
+  --warning-hover: #F7B733;
+
+  --danger: #E35D5D;
+  --danger-hover: #EF7A7A;
+
+  /* Effects */
+
+  --modal-blur: rgba(0, 0, 0, 0.75);
+
+  --shadow:
+    rgba(0, 0, 0, 0.45) 0 12px 20px,
+    rgba(0, 0, 0, 0.25) 0 4px 8px;
 }

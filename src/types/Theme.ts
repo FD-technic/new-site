@@ -1,4 +1,4 @@
-export type ThemeKey = "sand" | "ocean";
+export type ThemeKey = "sand" | "dark-sand" | "ocean" | "dark-ocean";
 
 export type Theme = {
     key: ThemeKey;
@@ -7,5 +7,7 @@ export type Theme = {
 
 export const THEMES: Theme[] = [
     { key: "sand", label: "☀️ Sand" },
+    { key: "dark-sand", label: "🌙 Sand" },
     { key: "ocean", label: "🌊 Ocean" },
+    { key: "dark-ocean", label: "🌙 Ocean" },
 ];

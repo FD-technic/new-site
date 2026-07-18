@@ -1,0 +1,34 @@
+.brand * {
+    margin: 0;
+    padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.brand img {
+    margin: 0;
+    padding: 0;
+    width: 68px;
+    height: 70px;
+}
+
+.brand h1 {
+    margin: 0;
+    text-align: start;
+    line-height: 1.3rem;
+    font-size: 1.0rem;
+    color: var(--primary);
+}
+
+.brand span {
+    color: var(--accent);
+}
+
+.tagline {
+    padding: 0 0.1rem;
+    line-height: 0;
+    font-size: 0.65rem;
+    color: var(--accent);
+}

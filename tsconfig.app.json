@@ -8,6 +8,17 @@
     "allowArbitraryExtensions": true,
     "skipLibCheck": true,
 
+    "paths": {
+      "@layout": ["./src/layout"],
+      "@layout/*": ["./src/layout/*"],
+
+      "@site": ["./src/site"],
+      "@site/*": ["./src/site/*"],
+
+      "@components": ["./src/components"],
+      "@components/*": ["./src/components/*"],
+    },
+
     /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
